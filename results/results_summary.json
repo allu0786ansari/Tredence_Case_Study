@@ -1,0 +1,111 @@
+{
+  "experiments": [
+    {
+      "lambda_val": 2e-08,
+      "lambda_label": "Low (2e-8)",
+      "best_test_acc": 0.5809,
+      "best_epoch": 48,
+      "final_sparsity": 0.0549126914127008,
+      "sparsity_at_best": 0.05486196470124606,
+      "per_layer": {
+        "fc1": 0.05471483866373698,
+        "fc2": 0.05773162841796875,
+        "fc3": 0.009375
+      }
+    },
+    {
+      "lambda_val": 1e-07,
+      "lambda_label": "Medium (1e-7)",
+      "best_test_acc": 0.5867,
+      "best_epoch": 49,
+      "final_sparsity": 0.5726699726017115,
+      "sparsity_at_best": 0.572636838969374,
+      "per_layer": {
+        "fc1": 0.5861183802286783,
+        "fc2": 0.4153404235839844,
+        "fc3": 0.1578125
+      }
+    },
+    {
+      "lambda_val": 5e-07,
+      "lambda_label": "High (5e-7)",
+      "best_test_acc": 0.5927,
+      "best_epoch": 45,
+      "final_sparsity": 0.8376337660448882,
+      "sparsity_at_best": 0.8367022125056298,
+      "per_layer": {
+        "fc1": 0.8610830307006836,
+        "fc2": 0.5622634887695312,
+        "fc3": 0.22109375
+      }
+    }
+  ],
+  "config": {
+    "seed": 42,
+    "dataset_name": "CIFAR-10",
+    "num_classes": 10,
+    "image_size": 32,
+    "num_channels": 3,
+    "cifar_mean": [
+      0.4914,
+      0.4822,
+      0.4465
+    ],
+    "cifar_std": [
+      0.247,
+      0.2435,
+      0.2616
+    ],
+    "batch_size_train": 128,
+    "batch_size_test": 256,
+    "num_workers": 2,
+    "pin_memory": true,
+    "input_dim": 3072,
+    "hidden1_dim": 1024,
+    "hidden2_dim": 256,
+    "output_dim": 10,
+    "dropout_p": 0.1,
+    "use_batchnorm": false,
+    "gate_init_mean": 0.0,
+    "gate_init_std": 1.0,
+    "epochs": 50,
+    "lr": 0.001,
+    "gate_lr": 0.01,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "lambdas": [
+      2e-08,
+      1e-07,
+      5e-07
+    ],
+    "lambda_labels": [
+      "Low (2e-8)",
+      "Medium (1e-7)",
+      "High (5e-7)"
+    ],
+    "lambda_warmup_epochs": 3,
+    "sparsity_threshold": 0.01,
+    "ste_threshold": 0.5,
+    "checkpoint_every_n_epochs": 5,
+    "keep_top_k_checkpoints": 1,
+    "gate_snapshot_epochs": [
+      1,
+      5,
+      10,
+      20,
+      30,
+      35,
+      40,
+      45,
+      50
+    ],
+    "project_root": "/content/drive/MyDrive/Tredence",
+    "checkpoint_dir": "/content/drive/MyDrive/Tredence/checkpoints",
+    "best_models_dir": "/content/drive/MyDrive/Tredence/best_models",
+    "log_dir": "/content/drive/MyDrive/Tredence/logs",
+    "figures_dir": "/content/drive/MyDrive/Tredence/figures",
+    "results_dir": "/content/drive/MyDrive/Tredence/results",
+    "data_dir": "/tmp/tredence_data"
+  },
+  "generated_at": "2026-04-20T14:10:41.773414"
+}

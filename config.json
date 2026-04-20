@@ -1,0 +1,67 @@
+{
+  "seed": 42,
+  "dataset_name": "CIFAR-10",
+  "num_classes": 10,
+  "image_size": 32,
+  "num_channels": 3,
+  "cifar_mean": [
+    0.4914,
+    0.4822,
+    0.4465
+  ],
+  "cifar_std": [
+    0.247,
+    0.2435,
+    0.2616
+  ],
+  "batch_size_train": 128,
+  "batch_size_test": 256,
+  "num_workers": 2,
+  "pin_memory": true,
+  "input_dim": 3072,
+  "hidden1_dim": 1024,
+  "hidden2_dim": 256,
+  "output_dim": 10,
+  "dropout_p": 0.1,
+  "use_batchnorm": false,
+  "gate_init_mean": 0.0,
+  "gate_init_std": 1.0,
+  "epochs": 50,
+  "lr": 0.001,
+  "gate_lr": 0.01,
+  "weight_decay": 0.0001,
+  "grad_clip": 1.0,
+  "lambdas": [
+    2e-08,
+    1e-07,
+    5e-07
+  ],
+  "lambda_labels": [
+    "Low (2e-8)",
+    "Medium (1e-7)",
+    "High (5e-7)"
+  ],
+  "lambda_warmup_epochs": 3,
+  "sparsity_threshold": 0.01,
+  "ste_threshold": 0.5,
+  "checkpoint_every_n_epochs": 5,
+  "keep_top_k_checkpoints": 1,
+  "gate_snapshot_epochs": [
+    1,
+    5,
+    10,
+    20,
+    30,
+    35,
+    40,
+    45,
+    50
+  ],
+  "project_root": "/content/drive/MyDrive/Tredence",
+  "checkpoint_dir": "/content/drive/MyDrive/Tredence/checkpoints",
+  "best_models_dir": "/content/drive/MyDrive/Tredence/best_models",
+  "log_dir": "/content/drive/MyDrive/Tredence/logs",
+  "figures_dir": "/content/drive/MyDrive/Tredence/figures",
+  "results_dir": "/content/drive/MyDrive/Tredence/results",
+  "data_dir": "/tmp/tredence_data"
+}
