@@ -93,6 +93,18 @@ The gradient of the L1 penalty provides constant downward pressure on every gate
 
 ---
 
+## Training Data & Artifacts
+
+All training logs, model checkpoints, experiment figures, and results from every λ run are available in the project Google Drive folder.
+
+📁 [View Training Data on Google Drive](https://drive.google.com/drive/folders/1T8Ioi8wQ41L4j06_SphlAD2EJrrxv-CF?usp=sharing)
+
+The folder contains:
+- Per-epoch training history CSV files for all three λ experiments
+- Best model and checkpoints saved during training
+- All generated figures (gate distributions, training curves, results comparison)
+- `results_summary.json` with final metrics for all experiments
+
 ## 4. Implementation Details
 
 ### 4.1 PrunableLinear Layer
