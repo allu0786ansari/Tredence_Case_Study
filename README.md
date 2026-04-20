@@ -86,9 +86,8 @@ The gradient of the L1 penalty provides constant downward pressure on every gate
 │   ├── gate_distributions_per_layer.png  # Per-layer gates — best model
 │   └── gate_init_diagnostic.png    # Gate values and gradients at init
 ├── logs/
-│   ├── history_lam2en08.csv        # Epoch-level metrics, λ = 2e-8
-│   ├── history_lam1en07.csv        # Epoch-level metrics, λ = 1e-7
-│   └── history_lam5en07.csv        # Epoch-level metrics, λ = 5e-7
+├── checkpoints/
+├── best_models/
 └── README.md
 ```
 
